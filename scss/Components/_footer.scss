@@ -1,0 +1,237 @@
+#footer {
+    background-color: $color08;
+    .map {
+        padding: 58px 0;
+        background-image: url(../image/Footer/map-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .map-wrapper {
+            text-align: center;
+            i {
+                font-size: 30px;
+                color: $color03;
+            }
+            p {
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                color: $color03;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 18px;
+            }
+            .divider {
+                width: 60px;
+                height: 3px;
+                background-color: $color03;
+                margin: 22px auto 0px;
+            }
+        }
+    }
+    .footer-wrapper {
+        margin-top: 75px;
+        padding-bottom: 70px;
+        border-bottom: 1px solid $color09;
+
+        .footer-about {
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 46px;
+                color: $color10;
+                font-weight: 700;
+            }
+            .footer-about-p {
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                color: $color06;
+                font-weight: 400;
+                margin-top: 45px;
+                line-height: 1.6;
+            }
+            .footer-about-followers {
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                color: $color05;
+                font-weight: 400;
+                margin-top: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $color09;
+                span {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 18px;
+                    color: $color05;
+                    font-weight: 700;
+                }
+            }
+            .socials-wrapper {
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                p {
+                    margin-right: 25px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 15px;
+                    color: $color06;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+                .socials {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 18px;
+                    i {
+                        color: $color04;
+                        font-size: 15px;
+                    }
+                    @media only screen and (max-width: 360px) {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            .subscribe-input {
+                margin-top: 40px;
+                form {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    input {
+                        padding: 14px;
+                        width: 230px;
+                        height: 40px;
+                        border: 1px solid $color09;
+                        &:focus-visible {
+                            outline: none !important;
+                        }
+                        &::-webkit-input-placeholder {
+                            font-family: "Roboto", sans-serif;
+                            font-size: 15px;
+                            color: $color10;
+                            font-weight: 300;
+                            font-style: italic;
+                        }
+                        @media only screen and (max-width: 565px) {
+                            width: 100% !important;
+                        }
+                    }
+                    button {
+                        padding: 0 33px;
+                        height: 40px;
+                        text-align: center;
+                        border: none;
+                        background-color: $color04;
+                        color: $color01;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        @media only screen and (max-width: 565px) {
+                            width: 100% !important;
+                            margin-top: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-blogs {
+        h3 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: $color07;
+            text-transform: uppercase;
+            @media only screen and (max-width: 979px) {
+                margin-top: 70px;
+            }
+        }
+        .footer-blogs-wrapper {
+            .footer-blog {
+                margin-top: 30px;
+                &:first-child {
+                    margin-top: 40px !important;
+                }
+                .footer-blog-img {
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .footer-blog-description {
+                    margin-left: 20px;
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: $color07;
+                        text-transform: uppercase;
+                        margin-bottom: 13px;
+                        line-height: 1.6;
+                    }
+                    span {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 13px;
+                        color: $color06;
+                        font-weight: 300;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+    .footer-instagram {
+        h3 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: $color07;
+            text-transform: uppercase;
+            @media only screen and (max-width: 979px) {
+                margin-top: 70px;
+            }
+        }
+        span {
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+            color: $color06;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .footer-instagram-wrapper {
+            margin-bottom: 20px;
+            margin-top: 40px;
+            .footer-instagram-row {
+                .footer-instagram-image {
+                    margin-right: 2px;
+                    &:last-child {
+                        margin-right: 0 !important;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: $color07;
+        }
+    }
+}

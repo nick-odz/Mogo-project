@@ -1,0 +1,84 @@
+#testimonial {
+    background-color: $color08;
+    padding: 70px 20px;
+    &.bg-transparent {
+        background-color: transparent !important;
+    }
+    .testimonial-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slick-arrow {
+            color: $color09;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .testimonial-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .testimonial-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 0 75px;
+                @media only screen and (max-width: 768px) {
+                    padding: 0;
+                }
+                .testimonial-icon {
+                    border: 4px solid $color04;
+                    padding: 45px;
+                    &.no-border {
+                        border: none !important;
+                        padding: 0 !important;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
+                    i {
+                        color: $color04;
+                        font-size: 60px;
+                    }
+                }
+                .testimonial-text {
+                    margin-left: 60px;
+                    @media only screen and (max-width: 768px) {
+                        margin-left: 0;
+                        padding: 0 20px;
+                    }
+                    p {
+                        color: $color06;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 300;
+                        font-style: italic;
+                        font-size: 25px;
+                        line-height: 1.6;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
+                    }
+                    .testimonial-author {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-top: 10px;
+                        .divider {
+                            width: 60px;
+                            height: 3px;
+                            background-color: $color03;
+                        }
+                        h4 {
+                            margin-left: 10px;
+                            font-family: "Kaushan Script";
+                            font-size: 24px;
+                            color: $color07;
+                            @media only screen and (max-width: 768px) {
+                             font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

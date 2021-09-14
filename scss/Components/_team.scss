@@ -1,0 +1,139 @@
+#team {
+    padding-top: 90px;
+    .team-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        .team-title {
+            font-family: "Kaushan Script";
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $color05;
+        }
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: $color03;
+            margin: 41px auto 47px;
+        }
+        .team-p {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            color: $color06;
+            margin-bottom: 105px;
+            line-height: 1.6;
+        }
+    }
+    .team-images {
+        margin-bottom: 110px;
+        @media only screen and (max-width: 991px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .team-person {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+            gap: 16px;
+            h3 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $color07;
+            }
+            p {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 15px;
+                color: $color06;
+            }
+        }
+        .team-image {
+            position: relative;
+            width: 100%;
+            transition: all 0.2s linear;
+            &:hover {
+                background-color: $color04;
+                img {
+                    transform: translate(-10px, -10px);
+                    transition: all 0.2s linear;
+                }
+                .gradient-hover {
+                    transform: translate(-10px, -10px);
+                    visibility: visible;
+                    transition: all 0.2s linear;
+                }
+            }
+            @media only screen and (max-width: 991px) {
+                margin-top: 50px;
+            }
+
+            .gradient-hover {
+                transition: all 0.2s linear;
+                position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                visibility: hidden;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(243, 129, 129, 0.9);
+                background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 139, 0.9));
+                background: -moz-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 139, 0.9));
+                background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 139, 0.9));
+                .gradient-hover-wrapper {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        background-color: #fce38a;
+                        color: $color03;
+                        padding: 25px;
+                        font-size: 26px;
+                        &:hover {
+                            color: #fff;
+                            background-color: $color03;
+                            cursor: pointer;
+                        }
+                    }
+
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-top: 12px;
+                    }
+                }
+            }
+
+            img {
+                transition: all 0.2s linear;
+
+                width: 100%;
+            }
+        }
+    }
+    .team-brands {
+        background-color: $color08;
+        padding: 72px 0;
+        img {
+            width: 100%;
+        }
+    }
+}

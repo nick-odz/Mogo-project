@@ -1,0 +1,65 @@
+#responsive {
+    height: 100vh;
+    background-image: url(../image/Responsive/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 110px 0 0 0;
+    position: relative;
+    .responsive-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        .responsive-title {
+            font-family: "Kaushan Script";
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #000;
+        }
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: $color03;
+            margin: 41px auto 47px;
+        }
+    }
+    .responsive-tablet {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 570px;
+        img {
+            width: 100%;
+        }
+        @media only screen and (max-width: 584px) {
+            width: 450px;
+        }
+        @media only screen and (max-width: 461px) {
+            width: 310px;
+        }
+    }
+    .responsive-phone {
+        position: absolute;
+        bottom: -10%;
+        left: 55%;
+        width: 274px;
+        img {
+            width: 100%;
+        }
+        @media only screen and (max-width: 584px) {
+           left: 50%;
+           transform: translateX(-50%);
+           width: 220px;
+        }
+        @media only screen and (max-width: 461px) {
+            width: 160px;
+        }
+    }
+}

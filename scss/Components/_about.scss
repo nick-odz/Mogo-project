@@ -1,0 +1,144 @@
+#about {
+    padding-top: 90px;
+    .about-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        .about-title {
+            font-family: "Kaushan Script";
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $color05;
+        }
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: $color03;
+            margin: 41px auto 47px;
+        }
+        .about-p {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            color: $color06;
+            margin-bottom: 105px;
+            line-height: 1.6;
+        }
+    }
+    .about-images {
+        margin-bottom: 110px;
+        @media only screen and (max-width: 991px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .about-image {
+            position: relative;
+            width: 100%;
+            transition: all 0.2s linear;
+            &:hover {
+                background-color: $color04;
+                img {
+                    transform: translate(-10px, -10px);
+                    transition: all 0.2s linear;
+                }
+                .gradient-hover {
+                    transform: translate(-10px, -10px);
+                    visibility: visible;
+                    transition: all 0.2s linear;
+                }
+            }
+            @media only screen and (max-width: 991px) {
+                margin-top: 50px;
+            }
+
+            .gradient-hover {
+                transition: all 0.2s linear;
+                position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                visibility: hidden;
+                top: 0;
+                left: 0;
+                opacity: 0.9;
+                height: 100%;
+                width: 100%;
+                background: $color03;
+                background: -webkit-linear-gradient(top, $color03, $color02);
+                background: -moz-linear-gradient(top, $color03, $color02);
+                background: linear-gradient(to bottom, $color03, $color02);
+                .gradient-hover-wrapper {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    i,
+                    p {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-top: 12px;
+                    }
+                }
+            }
+
+            img {
+                transition: all 0.2s linear;
+
+                width: 100%;
+            }
+        }
+    }
+    .about-counts {
+        background-color: $color04;
+        .about-count {
+            padding: 90px 0;
+            height: 100%;
+            border-right: 1px solid rgba(255, 255, 255, 0.36);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 72px;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            p {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-top: 29px;
+            }
+            &:first-child {
+                border-left: 1px solid rgba(255, 255, 255, 0.36);
+            }
+        }
+        .about-counts-wrapper {
+            @media only screen and (max-width: 991px) {
+                flex-wrap: wrap;
+                .about-count {
+                    border: none;
+                }
+            }
+        }
+    }
+}
